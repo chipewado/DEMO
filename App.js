@@ -8,6 +8,8 @@ connectDB();
 const app = express();
 
 App.use(express.json());
+App.use(express.urlencoded({ extended: true }));
+
 
 
 
