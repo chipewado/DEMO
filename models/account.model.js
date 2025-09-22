@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// const bcrypt = require('bcryptjs');
 const accountSchema = mongoose.Schema({
     username: {
         type: String,
@@ -18,8 +18,13 @@ const accountSchema = mongoose.Schema({
         type: String,
         required: true,
         unique: true
-    }
-}, {
+    },
+
+},
+//cập nhật update
+{Timestamps: true},
+
+{
     versionKey: false,
 });
 
